@@ -1,0 +1,1370 @@
+[
+  {
+    "id": "G1-01",
+    "group": "Waiting Periods & Eligibility",
+    "model": "codellama:7b-instruct",
+    "question": "What is the waiting period for pre-existing diseases under the Health Assurance policy?",
+    "answer": "The waiting period for pre-existing diseases under the Health Assurance policy is 48 months.",
+    "ground_truth": "Benefits for Pre-Existing Diseases are not available until 48 months of continuous coverage have elapsed since the inception of the first policy.",
+    "metrics": {
+      "correctness": 0.8557,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.8046,
+      "latency_seconds": 22.53,
+      "token_usage_approx": 36,
+      "peak_cpu_percent": 23.3,
+      "peak_memory_mb": 55.8
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G1-02",
+    "group": "Waiting Periods & Eligibility",
+    "model": "codellama:7b-instruct",
+    "question": "What is the specific waiting period for cataract treatment?",
+    "answer": "The specific waiting period for cataract treatment is 30 days.",
+    "ground_truth": "Cataract is subject to a 24-month specific waiting period and is covered from the commencement of the third policy year, provided continuous coverage without a break.",
+    "metrics": {
+      "correctness": 0.88,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.6954,
+      "latency_seconds": 15.25,
+      "token_usage_approx": 25,
+      "peak_cpu_percent": 23.4,
+      "peak_memory_mb": 55.5
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G1-03",
+    "group": "Waiting Periods & Eligibility",
+    "model": "codellama:7b-instruct",
+    "question": "Are stones in the biliary system covered immediately after the policy starts?",
+    "answer": "The waiting period for the conditions listed below will be subject to a waiting period of 24 months from the date of commencement of coverage for the Insured Person:\n1. Stones in the urinary system\n2. Stones in the biliary system\n3. Surgery on tonsils/adenoids\n4. Uterine polyps\n5. Any type of breast lumps\n6. Any type of treatment of Spondylosis/Spondylitis\n\nThis waiting period does not apply for any subsequent and continuous renewals of Your",
+    "ground_truth": "No. Stones in the biliary and urinary systems are subject to the 24-month specific waiting period, not covered immediately.",
+    "metrics": {
+      "correctness": 0.847,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.7291,
+      "latency_seconds": 18.58,
+      "token_usage_approx": 116,
+      "peak_cpu_percent": 7.8,
+      "peak_memory_mb": 56.2
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G1-04",
+    "group": "Waiting Periods & Eligibility",
+    "model": "codellama:7b-instruct",
+    "question": "What is the initial waiting period before any hospitalization (other than due to an accident) is covered?",
+    "answer": "The initial waiting period before any hospitalization (other than due to an accident) is covered is 24 months.",
+    "ground_truth": "There is an initial waiting period of 30 days from the date of commencement of the policy, unless the hospitalization is required solely and directly due to an accident.",
+    "metrics": {
+      "correctness": 0.8742,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.7702,
+      "latency_seconds": 15.6,
+      "token_usage_approx": 47,
+      "peak_cpu_percent": 15.6,
+      "peak_memory_mb": 55.4
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G2-05",
+    "group": "Coverage & Benefits",
+    "model": "codellama:7b-instruct",
+    "question": "What is the maximum number of days the Hospital Cash Benefit is payable in a policy year?",
+    "answer": "The waiting period for the Hospital Cash Benefit under 2.3 is 24 months and will be covered from the commencement of the third Policy Year as long as the Insured Person has been insured continuously under the Policy without any break.",
+    "ground_truth": "The Hospital Cash Benefit (Daily Allowance) is payable for a maximum of 45 days in a policy year, including all days of ICU admission.",
+    "metrics": {
+      "correctness": 0.7768,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.7574,
+      "latency_seconds": 16.51,
+      "token_usage_approx": 77,
+      "peak_cpu_percent": 15.6,
+      "peak_memory_mb": 56.2
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G2-06",
+    "group": "Coverage & Benefits",
+    "model": "codellama:7b-instruct",
+    "question": "How does the ICU daily allowance compare to the normal Hospital Cash Benefit daily allowance?",
+    "answer": "The answer is:\n\n2.3.4. If an Insured Person is required to be admitted to the Intensive Care Unit of a Hospital solely and directly due to an Accident or due to an Illness, then We will pay twice the Daily Allowance specified in the Certificate of Insurance for each continuous and completed period of 24 hours of admission in the Intensive Care Unit for a maximum of 7 days for an Insured Person in a policy year.",
+    "ground_truth": "If admitted to the ICU, twice the normal Daily Allowance is paid for each continuous 24-hour period of ICU admission.",
+    "metrics": {
+      "correctness": 0.8316,
+      "faithfulness": 0.5,
+      "hallucination_rate": 0.5,
+      "retrieval_quality": 0.7233,
+      "latency_seconds": 16.88,
+      "token_usage_approx": 123,
+      "peak_cpu_percent": 7.8,
+      "peak_memory_mb": 55.8
+    },
+    "risk": "HIGH"
+  },
+  {
+    "id": "G2-07",
+    "group": "Coverage & Benefits",
+    "model": "codellama:7b-instruct",
+    "question": "What is the minimum hospitalization period required to claim the Hospital Cash Benefit?",
+    "answer": "The answer is:\n\nThe health card will enable an Insured Person to access treatment on a cashless basis only at any Network Provider on the production of the card to the Hospital prior to admission, provided that: (1) The Insured Person has notified Us in writing at least 72 Hours before a planned Hospitalization. In an Emergency the Insured Person should notify Us in writing within 48 hours of Hospitalization; and (2) We have pre-authorized the Inpatient Care or Day Care Treatment.",
+    "ground_truth": "The insured person must be hospitalised for a minimum of at least 2 days with continuous completed 24-hour periods for the benefit to be payable.",
+    "metrics": {
+      "correctness": 0.7313,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.7825,
+      "latency_seconds": 18.5,
+      "token_usage_approx": 127,
+      "peak_cpu_percent": 15.6,
+      "peak_memory_mb": 56.8
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G2-08",
+    "group": "Coverage & Benefits",
+    "model": "codellama:7b-instruct",
+    "question": "What is the maximum number of days the ICU benefit is payable per policy year?",
+    "answer": "The maximum number of days the ICU benefit is payable per policy year is 7 days.",
+    "ground_truth": "The ICU benefit is payable for a maximum of 7 days in a policy year.",
+    "metrics": {
+      "correctness": 0.971,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.7987,
+      "latency_seconds": 17.4,
+      "token_usage_approx": 41,
+      "peak_cpu_percent": 7.8,
+      "peak_memory_mb": 56.4
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G3-09",
+    "group": "Exclusions & Limitations",
+    "model": "codellama:7b-instruct",
+    "question": "Does the policy cover cosmetic surgery?",
+    "answer": "The policy covers cosmetic surgery.",
+    "ground_truth": "No. Cosmetic or plastic surgery undertaken purely for cosmetic or psychological reasons is excluded, unless medically necessary due to an accident or illness.",
+    "metrics": {
+      "correctness": 0.7278,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.7013,
+      "latency_seconds": 326.66,
+      "token_usage_approx": 15,
+      "peak_cpu_percent": 23.4,
+      "peak_memory_mb": 55.5
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G3-10",
+    "group": "Exclusions & Limitations",
+    "model": "codellama:7b-instruct",
+    "question": "Under what condition are benefits for Pre-Existing Diseases excluded?",
+    "answer": "Under what condition are benefits for Pre-Existing Diseases excluded?\n\nThe answer is:\n\na. Pre-Existing Diseases Benefits will not be available for Pre-Existing Diseases until 48 months of continuous coverage have elapsed from the date of commencement of coverage for the Insured Person.\n\nThis is stated in the following evidence:\n\nEVIDENCE 1\nDocument: Group_Health_Insurance.pdf\nPage: 4\nChunk: 17",
+    "ground_truth": "Pre-existing disease benefits are excluded until 48 months of continuous coverage have elapsed since inception of the first policy with the insurer.",
+    "metrics": {
+      "correctness": 0.9069,
+      "faithfulness": 0.5,
+      "hallucination_rate": 0.5,
+      "retrieval_quality": 0.8103,
+      "latency_seconds": 22.47,
+      "token_usage_approx": 88,
+      "peak_cpu_percent": 15.6,
+      "peak_memory_mb": 56.4
+    },
+    "risk": "HIGH"
+  },
+  {
+    "id": "G3-11",
+    "group": "Exclusions & Limitations",
+    "model": "codellama:7b-instruct",
+    "question": "Is hospitalization caused by an accident subject to the 30-day initial waiting period?",
+    "answer": "Hospitalization caused by an accident is subject to the 30-day initial waiting period.",
+    "ground_truth": "No, the 30-day initial waiting period does not apply if the hospitalization is required solely and directly due to an accident.",
+    "metrics": {
+      "correctness": 0.9564,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.7842,
+      "latency_seconds": 19.4,
+      "token_usage_approx": 35,
+      "peak_cpu_percent": 15.6,
+      "peak_memory_mb": 56.7
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G3-12",
+    "group": "Exclusions & Limitations",
+    "model": "codellama:7b-instruct",
+    "question": "What happens to a Permanent Partial Disability (PPD) claim if the insured person dies before the claim is admitted?",
+    "answer": "The answer is:\n\nWe will make a one-time payment of Rs 5,000 towards the funeral expenses of that Insured Person. 2.1.4 Accidental Permanent Total Disability (PTD) If an Insured Person suffers Permanent Total Disability solely and directly due to an Accident and within ninety (90) days of such Accident, We will pay the Sum Assured specified in the Schedule of Insurance Certificate provided that: 2.1.4.1",
+    "ground_truth": "No amount is payable under the Permanent Partial Disability benefit; instead the claim will be considered under the Accidental Death benefit.",
+    "metrics": {
+      "correctness": 0.7584,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.8284,
+      "latency_seconds": 23.1,
+      "token_usage_approx": 112,
+      "peak_cpu_percent": 22.6,
+      "peak_memory_mb": 56.4
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G4-13",
+    "group": "Numerical & Financial Details",
+    "model": "codellama:7b-instruct",
+    "question": "What percentage of the Sum Insured is payable for the loss of use of both hands under Permanent Partial Disability?",
+    "answer": "The answer to the question is 100%.",
+    "ground_truth": "100% of the Sum Insured is payable for the loss or total and permanent loss of use of both hands from the wrist joint.",
+    "metrics": {
+      "correctness": 0.5556,
+      "faithfulness": 0.0,
+      "hallucination_rate": 1.0,
+      "retrieval_quality": 0.8292,
+      "latency_seconds": 17.54,
+      "token_usage_approx": 36,
+      "peak_cpu_percent": 23.2,
+      "peak_memory_mb": 56.8
+    },
+    "risk": "HIGH"
+  },
+  {
+    "id": "G4-14",
+    "group": "Numerical & Financial Details",
+    "model": "codellama:7b-instruct",
+    "question": "How much notice must be given to cancel the Travel Insurance policy, and what minimum amount does the company retain?",
+    "answer": "The answer to the question \"How much notice must be given to cancel the Travel Insurance policy, and what minimum refund will be given?\" is:\n\n* To cancel the policy, at least 30 days' notice must be given.\n* The minimum refund will be on a pro-rata basis.\n\nThis information is contained in the evidence provided, specifically in the following sections:\n\n* Section 4 of the Travel Insurance Policy Document: \"Cancellation/Termination (other than Free Look cancellation) 1.",
+    "ground_truth": "The policy may be cancelled with thirty (30) days written notice, and the company retains a minimum of Rs 251 from the premium.",
+    "metrics": {
+      "correctness": 0.8114,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.7957,
+      "latency_seconds": 22.48,
+      "token_usage_approx": 129,
+      "peak_cpu_percent": 15.6,
+      "peak_memory_mb": 56.6
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G4-15",
+    "group": "Numerical & Financial Details",
+    "model": "codellama:7b-instruct",
+    "question": "For how long must a Permanent Total or Partial Disability continue to be admissible as a claim?",
+    "answer": "2.1.3.1 the Permanent Total Disability is proved to Our satisfaction; and a disability certificate is presented to Us, and such disability certificate shall be issued by a Medical Board duly constituted by the Central and/or the State Government; and 2.1.3.2 We will admit a claim under 2.1.3 only if the Permanent Total Disability continues for a period of at least 6 continuous calendar months from the commencement of the Permanent Total Disability unless there are no chances of variation",
+    "ground_truth": "The disability must continue for a period of at least 6 continuous calendar months from its commencement, unless it is irreversible.",
+    "metrics": {
+      "correctness": 0.8345,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.8082,
+      "latency_seconds": 21.44,
+      "token_usage_approx": 128,
+      "peak_cpu_percent": 15.6,
+      "peak_memory_mb": 57.3
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G4-16",
+    "group": "Numerical & Financial Details",
+    "model": "codellama:7b-instruct",
+    "question": "Within how many days of an accident must a Permanent Partial Disability occur for it to be claimable?",
+    "answer": "The answer is:\n\n2.1.3.3 If the Insured Person dies before a claim has been admitted under 2.1.3, no amount will be payable under 2.1.3, however We will consider the claim under 2.1.1.",
+    "ground_truth": "The disability must occur within 365 days from the occurrence of the accident.",
+    "metrics": {
+      "correctness": 0.5796,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.8107,
+      "latency_seconds": 20.1,
+      "token_usage_approx": 67,
+      "peak_cpu_percent": 15.6,
+      "peak_memory_mb": 56.9
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G5-17",
+    "group": "Cross-Document & Multi-hop Reasoning",
+    "model": "codellama:7b-instruct",
+    "question": "Compare the initial waiting period across the Health Assurance and Group Health Insurance policies.",
+    "answer": "The initial waiting period for Group Health Insurance is 24 months from the date of commencement of coverage for the Insured Person. This waiting period does not apply for any subsequent and continuous Renewals of Your Policy.\n\nThe initial waiting period for Health Companion Health Insurance is 24 months from the date of commencement of coverage for the Insured Person. This waiting period does not apply for any subsequent and continuous Renewals of Your Policy.\n\nThe initial waiting period for Health Assurance is 24 months from the date",
+    "ground_truth": "Both policies apply a similar initial waiting period of 30 days from the start of coverage, which does not apply to hospitalization caused directly by an accident.",
+    "metrics": {
+      "correctness": 0.8077,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.7721,
+      "latency_seconds": 21.46,
+      "token_usage_approx": 136,
+      "peak_cpu_percent": 23.4,
+      "peak_memory_mb": 56.7
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G5-18",
+    "group": "Cross-Document & Multi-hop Reasoning",
+    "model": "codellama:7b-instruct",
+    "question": "If a person has a pre-existing disease and also needs cataract surgery, which waiting period is longer and which one applies overall?",
+    "answer": "1. Stones in the urinary system\n2. Stones in the biliary system\n3. Surgery on tonsils/adenoids\n4. Uterine polyps\n5. Any type of breast lumps\n6. Any type of treatment of spondylosis/spondylitis\n7. Varicose veins\n8. Dysfunctional uterine bleeding/fibroids/prolapse uterus/endometriosis\n9. Diabetes and related complications\n10. Hyst",
+    "ground_truth": "The pre-existing disease waiting period (48 months) is longer than the cataract-specific waiting period (24 months); since cataract is likely linked to or treated as part of the broader pre-existing condition rules, the longer 48-month pre-existing disease waiting period is the more restrictive one to consider.",
+    "metrics": {
+      "correctness": 0.5719,
+      "faithfulness": 0.82,
+      "hallucination_rate": 0.1818,
+      "retrieval_quality": 0.732,
+      "latency_seconds": 20.9,
+      "token_usage_approx": 92,
+      "peak_cpu_percent": 15.6,
+      "peak_memory_mb": 57.1
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G5-19",
+    "group": "Cross-Document & Multi-hop Reasoning",
+    "model": "codellama:7b-instruct",
+    "question": "Which documents in the knowledge base mention coverage for hospitalization expenses?",
+    "answer": "The answer is:\n\n1. HAIR REMOVAL CREAM Not Payable\n2. BABY CHARGES (UNLESS SPECIFIED/INDICATED) Not Payable\n3. BABY FOOD Not Payable\n4. BABY UTILITES CHARGES Not Payable\n5. BABY SET Not Payable\n6. BABY BOTTLES Not Payable\n7. BRUSH Not Payable\n8. COSY TOWEL Not Payable",
+    "ground_truth": "Health_Assurance.pdf, Group_Health_Insurance.pdf, and Health_Companion_Insurance.pdf all mention hospitalization coverage.",
+    "metrics": {
+      "correctness": 0.5114,
+      "faithfulness": 0.89,
+      "hallucination_rate": 0.1111,
+      "retrieval_quality": 0.7738,
+      "latency_seconds": 21.28,
+      "token_usage_approx": 76,
+      "peak_cpu_percent": 7.8,
+      "peak_memory_mb": 56.9
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G5-20",
+    "group": "Cross-Document & Multi-hop Reasoning",
+    "model": "codellama:7b-instruct",
+    "question": "Which two documents both describe Permanent Total Disability (PTD) benefits?",
+    "answer": "The answer is 90 days.",
+    "ground_truth": "Health_Assurance.pdf and AccidentCare_Insurance.pdf both describe Permanent Total Disability benefits.",
+    "metrics": {
+      "correctness": 0.4687,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.7573,
+      "latency_seconds": 18.36,
+      "token_usage_approx": 20,
+      "peak_cpu_percent": 23.3,
+      "peak_memory_mb": 56.7
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G6-21",
+    "group": "Robustness (Out-of-Scope / Ambiguous / Hallucination-Trap)",
+    "model": "codellama:7b-instruct",
+    "question": "What is today's petrol price?",
+    "answer": "The answer to the question \"What is the average percentage of correct answers?\" is 63.64%.",
+    "ground_truth": "This information is not related to insurance policies and is not present in the knowledge base; the correct behavior is to state that the documents do not contain this information rather than guessing an answer.",
+    "metrics": {
+      "correctness": 0.4398,
+      "faithfulness": 0.0,
+      "hallucination_rate": 1.0,
+      "retrieval_quality": 0.5357,
+      "latency_seconds": 23.91,
+      "token_usage_approx": 27,
+      "peak_cpu_percent": 15.6,
+      "peak_memory_mb": 57.6
+    },
+    "risk": "HIGH"
+  },
+  {
+    "id": "G6-22",
+    "group": "Robustness (Out-of-Scope / Ambiguous / Hallucination-Trap)",
+    "model": "codellama:7b-instruct",
+    "question": "Will my surgery be covered?",
+    "answer": "Will your surgery be covered?\n\nBased on the evidence provided, it appears that the Group Health Insurance policy document covers surgical procedures, including bariatric and varicose vein surgery. The policy document states that the policy will cover \"Medical Expenses for: (a) Surgical operations including pre and post operative care (b) Nursing care, drugs and surgical dressings (c) Medical Practitioner\u201fs fee (d) Operation theatre charges (e) Diagnostic procedures and therapies (",
+    "ground_truth": "This question is ambiguous because it does not specify the type of surgery, policy, or condition; the correct behavior is to ask for clarification or explain that coverage depends on the specific procedure, waiting periods, and exclusions, rather than giving a definite yes or no.",
+    "metrics": {
+      "correctness": 0.6792,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.7064,
+      "latency_seconds": 21.77,
+      "token_usage_approx": 100,
+      "peak_cpu_percent": 23.2,
+      "peak_memory_mb": 56.9
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G6-23",
+    "group": "Robustness (Out-of-Scope / Ambiguous / Hallucination-Trap)",
+    "model": "codellama:7b-instruct",
+    "question": "Does the policy provide unlimited coverage for every medical treatment?",
+    "answer": "The policy provides unlimited coverage for medical treatment up to the amount specified in the Policy Schedule/Certificate of Insurance.",
+    "ground_truth": "No. Coverage is subject to waiting periods, exclusions, sub-limits (such as the 45-day/7-day caps on Hospital Cash Benefit), and specific policy conditions; it is not unlimited.",
+    "metrics": {
+      "correctness": 0.7883,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.7393,
+      "latency_seconds": 18.38,
+      "token_usage_approx": 39,
+      "peak_cpu_percent": 23.4,
+      "peak_memory_mb": 57.4
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G6-24",
+    "group": "Robustness (Out-of-Scope / Ambiguous / Hallucination-Trap)",
+    "model": "codellama:7b-instruct",
+    "question": "Does this insurance policy cover cosmetic surgery?",
+    "answer": "The answer is that the policy covers reasonable expenses incurred towards medical treatment taken during the Policy Period for an Illness, Accident or condition described below if this is contracted or sustained by an Insured Person during the Policy Period and subject always to the Sum Insured, any subsidiary limit specified in the Product Benefits Table, the terms, conditions, limitations and exclusions mentioned in the Policy and eligibility as per the insurance plan opted for in the Product Benefits Table and as shown in the Schedule of Insurance Certificate.",
+    "ground_truth": "No, cosmetic or plastic surgery for purely cosmetic or psychological reasons is excluded from coverage.",
+    "metrics": {
+      "correctness": 0.6523,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.6902,
+      "latency_seconds": 22.12,
+      "token_usage_approx": 128,
+      "peak_cpu_percent": 7.8,
+      "peak_memory_mb": 57.0
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G1-01",
+    "group": "Waiting Periods & Eligibility",
+    "model": "qwen2.5:1.5b",
+    "question": "What is the waiting period for pre-existing diseases under the Health Assurance policy?",
+    "answer": "The waiting period for pre-existing diseases under the Health Assurance policy is 48 months of continuous coverage.",
+    "ground_truth": "Benefits for Pre-Existing Diseases are not available until 48 months of continuous coverage have elapsed since the inception of the first policy.",
+    "metrics": {
+      "correctness": 0.8944,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.8046,
+      "latency_seconds": 12.79,
+      "token_usage_approx": 40,
+      "peak_cpu_percent": 54.6,
+      "peak_memory_mb": 72.7
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G1-02",
+    "group": "Waiting Periods & Eligibility",
+    "model": "qwen2.5:1.5b",
+    "question": "What is the specific waiting period for cataract treatment?",
+    "answer": "The specific waiting period for cataract treatment is 24 months from the date of commencement of coverage for the Insured Person.",
+    "ground_truth": "Cataract is subject to a 24-month specific waiting period and is covered from the commencement of the third policy year, provided continuous coverage without a break.",
+    "metrics": {
+      "correctness": 0.9337,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.6954,
+      "latency_seconds": 11.88,
+      "token_usage_approx": 40,
+      "peak_cpu_percent": 46.7,
+      "peak_memory_mb": 65.1
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G1-03",
+    "group": "Waiting Periods & Eligibility",
+    "model": "qwen2.5:1.5b",
+    "question": "Are stones in the biliary system covered immediately after the policy starts?",
+    "answer": "Yes, stones in the biliary system are covered immediately after the policy starts.",
+    "ground_truth": "No. Stones in the biliary and urinary systems are subject to the 24-month specific waiting period, not covered immediately.",
+    "metrics": {
+      "correctness": 0.8241,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.7291,
+      "latency_seconds": 11.29,
+      "token_usage_approx": 33,
+      "peak_cpu_percent": 45.4,
+      "peak_memory_mb": 73.5
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G1-04",
+    "group": "Waiting Periods & Eligibility",
+    "model": "qwen2.5:1.5b",
+    "question": "What is the initial waiting period before any hospitalization (other than due to an accident) is covered?",
+    "answer": "The initial waiting period before any hospitalization (other than due to an accident) is covered is 30 days.",
+    "ground_truth": "There is an initial waiting period of 30 days from the date of commencement of the policy, unless the hospitalization is required solely and directly due to an accident.",
+    "metrics": {
+      "correctness": 0.9159,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.7702,
+      "latency_seconds": 11.29,
+      "token_usage_approx": 47,
+      "peak_cpu_percent": 62.2,
+      "peak_memory_mb": 72.2
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G2-05",
+    "group": "Coverage & Benefits",
+    "model": "qwen2.5:1.5b",
+    "question": "What is the maximum number of days the Hospital Cash Benefit is payable in a policy year?",
+    "answer": "45 days",
+    "ground_truth": "The Hospital Cash Benefit (Daily Allowance) is payable for a maximum of 45 days in a policy year, including all days of ICU admission.",
+    "metrics": {
+      "correctness": 0.5246,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.7574,
+      "latency_seconds": 11.06,
+      "token_usage_approx": 25,
+      "peak_cpu_percent": 54.6,
+      "peak_memory_mb": 71.4
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G2-06",
+    "group": "Coverage & Benefits",
+    "model": "qwen2.5:1.5b",
+    "question": "How does the ICU daily allowance compare to the normal Hospital Cash Benefit daily allowance?",
+    "answer": "The ICU daily allowance is twice the Daily Allowance specified in the Product Benefit Table for each continuous and completed period of 24 hours of admission in the Intensive Care Unit for a maximum of 7 days for an Insured Person in a policy year.",
+    "ground_truth": "If admitted to the ICU, twice the normal Daily Allowance is paid for each continuous 24-hour period of ICU admission.",
+    "metrics": {
+      "correctness": 0.8878,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.7233,
+      "latency_seconds": 11.53,
+      "token_usage_approx": 80,
+      "peak_cpu_percent": 54.5,
+      "peak_memory_mb": 74.3
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G2-07",
+    "group": "Coverage & Benefits",
+    "model": "qwen2.5:1.5b",
+    "question": "What is the minimum hospitalization period required to claim the Hospital Cash Benefit?",
+    "answer": "The minimum duration for the benefit to be payable from the first day of Hospitalization is 2 days with continuous and completed periods of at least 24 hours.",
+    "ground_truth": "The insured person must be hospitalised for a minimum of at least 2 days with continuous completed 24-hour periods for the benefit to be payable.",
+    "metrics": {
+      "correctness": 0.8883,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.7825,
+      "latency_seconds": 11.39,
+      "token_usage_approx": 55,
+      "peak_cpu_percent": 39.0,
+      "peak_memory_mb": 73.5
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G2-08",
+    "group": "Coverage & Benefits",
+    "model": "qwen2.5:1.5b",
+    "question": "What is the maximum number of days the ICU benefit is payable per policy year?",
+    "answer": "7 days",
+    "ground_truth": "The ICU benefit is payable for a maximum of 7 days in a policy year.",
+    "metrics": {
+      "correctness": 0.5695,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.7987,
+      "latency_seconds": 11.04,
+      "token_usage_approx": 23,
+      "peak_cpu_percent": 70.0,
+      "peak_memory_mb": 72.6
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G3-09",
+    "group": "Exclusions & Limitations",
+    "model": "qwen2.5:1.5b",
+    "question": "Does the policy cover cosmetic surgery?",
+    "answer": "No, the policy does not cover cosmetic surgery.",
+    "ground_truth": "No. Cosmetic or plastic surgery undertaken purely for cosmetic or psychological reasons is excluded, unless medically necessary due to an accident or illness.",
+    "metrics": {
+      "correctness": 0.7948,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.7013,
+      "latency_seconds": 11.2,
+      "token_usage_approx": 19,
+      "peak_cpu_percent": 38.9,
+      "peak_memory_mb": 76.1
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G3-10",
+    "group": "Exclusions & Limitations",
+    "model": "qwen2.5:1.5b",
+    "question": "Under what condition are benefits for Pre-Existing Diseases excluded?",
+    "answer": "Pre-Existing Diseases benefits are excluded until 48 months of continuous coverage have elapsed from the date of commencement of coverage for the Insured Person.",
+    "ground_truth": "Pre-existing disease benefits are excluded until 48 months of continuous coverage have elapsed since inception of the first policy with the insurer.",
+    "metrics": {
+      "correctness": 0.9768,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.8103,
+      "latency_seconds": 11.19,
+      "token_usage_approx": 44,
+      "peak_cpu_percent": 54.6,
+      "peak_memory_mb": 75.4
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G3-11",
+    "group": "Exclusions & Limitations",
+    "model": "qwen2.5:1.5b",
+    "question": "Is hospitalization caused by an accident subject to the 30-day initial waiting period?",
+    "answer": "No, hospitalization caused by an accident is not subject to the 30-day initial waiting period. According to Evidence 1, the policy explicitly states that we will not be liable to make any payment for Hospitalization and/or treatment and/or treatment following diagnosis which occurs within 30 days from the date of commencement of the Policy specified in the Schedule of Insurance Certificate, unless such Hospitalization is required solely and directly due to an Accident.",
+    "ground_truth": "No, the 30-day initial waiting period does not apply if the hospitalization is required solely and directly due to an accident.",
+    "metrics": {
+      "correctness": 0.9203,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.7842,
+      "latency_seconds": 11.9,
+      "token_usage_approx": 115,
+      "peak_cpu_percent": 30.6,
+      "peak_memory_mb": 76.8
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G3-12",
+    "group": "Exclusions & Limitations",
+    "model": "qwen2.5:1.5b",
+    "question": "What happens to a Permanent Partial Disability (PPD) claim if the insured person dies before the claim is admitted?",
+    "answer": "We will make a one-time payment of Rs 5,000 towards the funeral expenses of that Insured Person.",
+    "ground_truth": "No amount is payable under the Permanent Partial Disability benefit; instead the claim will be considered under the Accidental Death benefit.",
+    "metrics": {
+      "correctness": 0.5741,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.8284,
+      "latency_seconds": 11.25,
+      "token_usage_approx": 48,
+      "peak_cpu_percent": 54.5,
+      "peak_memory_mb": 76.9
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G4-13",
+    "group": "Numerical & Financial Details",
+    "model": "qwen2.5:1.5b",
+    "question": "What percentage of the Sum Insured is payable for the loss of use of both hands under Permanent Partial Disability?",
+    "answer": "50%",
+    "ground_truth": "100% of the Sum Insured is payable for the loss or total and permanent loss of use of both hands from the wrist joint.",
+    "metrics": {
+      "correctness": 0.4712,
+      "faithfulness": 0.0,
+      "hallucination_rate": 1.0,
+      "retrieval_quality": 0.8292,
+      "latency_seconds": 11.1,
+      "token_usage_approx": 28,
+      "peak_cpu_percent": 54.1,
+      "peak_memory_mb": 78.5
+    },
+    "risk": "HIGH"
+  },
+  {
+    "id": "G4-14",
+    "group": "Numerical & Financial Details",
+    "model": "qwen2.5:1.5b",
+    "question": "How much notice must be given to cancel the Travel Insurance policy, and what minimum amount does the company retain?",
+    "answer": "The minimum amount the company retains is Rs 251. The notice period to cancel the Travel Insurance policy is 30 days.",
+    "ground_truth": "The policy may be cancelled with thirty (30) days written notice, and the company retains a minimum of Rs 251 from the premium.",
+    "metrics": {
+      "correctness": 0.9081,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.7957,
+      "latency_seconds": 11.31,
+      "token_usage_approx": 55,
+      "peak_cpu_percent": 37.8,
+      "peak_memory_mb": 78.5
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G4-15",
+    "group": "Numerical & Financial Details",
+    "model": "qwen2.5:1.5b",
+    "question": "For how long must a Permanent Total or Partial Disability continue to be admissible as a claim?",
+    "answer": "The answer is 100 weeks.",
+    "ground_truth": "The disability must continue for a period of at least 6 continuous calendar months from its commencement, unless it is irreversible.",
+    "metrics": {
+      "correctness": 0.5819,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.8082,
+      "latency_seconds": 10.67,
+      "token_usage_approx": 29,
+      "peak_cpu_percent": 39.0,
+      "peak_memory_mb": 65.3
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G4-16",
+    "group": "Numerical & Financial Details",
+    "model": "qwen2.5:1.5b",
+    "question": "Within how many days of an accident must a Permanent Partial Disability occur for it to be claimable?",
+    "answer": "The answer is 6 continuous calendar months.",
+    "ground_truth": "The disability must occur within 365 days from the occurrence of the accident.",
+    "metrics": {
+      "correctness": 0.5252,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.8107,
+      "latency_seconds": 11.13,
+      "token_usage_approx": 33,
+      "peak_cpu_percent": 46.6,
+      "peak_memory_mb": 70.7
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G5-17",
+    "group": "Cross-Document & Multi-hop Reasoning",
+    "model": "qwen2.5:1.5b",
+    "question": "Compare the initial waiting period across the Health Assurance and Group Health Insurance policies.",
+    "answer": "The initial waiting period for the Health Assurance policy is 24 months, starting from the date of commencement of coverage for the Insured Person. This waiting period applies to conditions listed in the evidence, including stones in the urinary system, stones in the billiary system, surgery on tonsils/adenoids, uterine polyps, any type of breast lumps, and any type of treatment of spondylosis/spondylitis. The Group Health Insurance policy does not specify an initial waiting period.",
+    "ground_truth": "Both policies apply a similar initial waiting period of 30 days from the start of coverage, which does not apply to hospitalization caused directly by an accident.",
+    "metrics": {
+      "correctness": 0.8203,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.7721,
+      "latency_seconds": 12.29,
+      "token_usage_approx": 117,
+      "peak_cpu_percent": 38.9,
+      "peak_memory_mb": 72.9
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G5-18",
+    "group": "Cross-Document & Multi-hop Reasoning",
+    "model": "qwen2.5:1.5b",
+    "question": "If a person has a pre-existing disease and also needs cataract surgery, which waiting period is longer and which one applies overall?",
+    "answer": "The waiting period for cataract surgery is longer than the waiting period for a pre-existing disease. The waiting period for cataract surgery is 24 months, while the waiting period for a pre-existing disease is 24 months.",
+    "ground_truth": "The pre-existing disease waiting period (48 months) is longer than the cataract-specific waiting period (24 months); since cataract is likely linked to or treated as part of the broader pre-existing condition rules, the longer 48-month pre-existing disease waiting period is the more restrictive one to consider.",
+    "metrics": {
+      "correctness": 0.9472,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.732,
+      "latency_seconds": 11.45,
+      "token_usage_approx": 77,
+      "peak_cpu_percent": 29.9,
+      "peak_memory_mb": 77.6
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G5-19",
+    "group": "Cross-Document & Multi-hop Reasoning",
+    "model": "qwen2.5:1.5b",
+    "question": "Which documents in the knowledge base mention coverage for hospitalization expenses?",
+    "answer": "Medical Expenses incurred immediately before the Insured Person is Hospitalised, provided that: c) Such Medical Expenses are incurred for the same condition for which the Insured Person's Hospitalisation was required, and d) The Inpatient Care Hospitalisation claim for such Hospitalisation is admissible by the Insurance Company.",
+    "ground_truth": "Health_Assurance.pdf, Group_Health_Insurance.pdf, and Health_Companion_Insurance.pdf all mention hospitalization coverage.",
+    "metrics": {
+      "correctness": 0.7355,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.7738,
+      "latency_seconds": 11.76,
+      "token_usage_approx": 76,
+      "peak_cpu_percent": 46.7,
+      "peak_memory_mb": 77.6
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G5-20",
+    "group": "Cross-Document & Multi-hop Reasoning",
+    "model": "qwen2.5:1.5b",
+    "question": "Which two documents both describe Permanent Total Disability (PTD) benefits?",
+    "answer": "6.1.1 The grid below specifies the percentage of the Sum Insured payable for Temporary Total Disability.",
+    "ground_truth": "Health_Assurance.pdf and AccidentCare_Insurance.pdf both describe Permanent Total Disability benefits.",
+    "metrics": {
+      "correctness": 0.7342,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.7573,
+      "latency_seconds": 11.22,
+      "token_usage_approx": 35,
+      "peak_cpu_percent": 54.5,
+      "peak_memory_mb": 65.5
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G6-21",
+    "group": "Robustness (Out-of-Scope / Ambiguous / Hallucination-Trap)",
+    "model": "qwen2.5:1.5b",
+    "question": "What is today's petrol price?",
+    "answer": "65.00%",
+    "ground_truth": "This information is not related to insurance policies and is not present in the knowledge base; the correct behavior is to state that the documents do not contain this information rather than guessing an answer.",
+    "metrics": {
+      "correctness": 0.3146,
+      "faithfulness": 0.0,
+      "hallucination_rate": 1.0,
+      "retrieval_quality": 0.5357,
+      "latency_seconds": 11.2,
+      "token_usage_approx": 8,
+      "peak_cpu_percent": 46.7,
+      "peak_memory_mb": 70.4
+    },
+    "risk": "HIGH"
+  },
+  {
+    "id": "G6-22",
+    "group": "Robustness (Out-of-Scope / Ambiguous / Hallucination-Trap)",
+    "model": "qwen2.5:1.5b",
+    "question": "Will my surgery be covered?",
+    "answer": "Yes, your surgery will be covered under the Group Health Insurance policy. The policy covers surgical operations, including pre and post-operative care, nursing care, drugs, surgical dressings, medical practitioner's fees, operation theatre charges, diagnostic procedures, and prosthetics. The essential leggings for bariatric and varicose vein surgery are also covered.",
+    "ground_truth": "This question is ambiguous because it does not specify the type of surgery, policy, or condition; the correct behavior is to ask for clarification or explain that coverage depends on the specific procedure, waiting periods, and exclusions, rather than giving a definite yes or no.",
+    "metrics": {
+      "correctness": 0.6667,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.7064,
+      "latency_seconds": 11.66,
+      "token_usage_approx": 72,
+      "peak_cpu_percent": 54.5,
+      "peak_memory_mb": 67.4
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G6-23",
+    "group": "Robustness (Out-of-Scope / Ambiguous / Hallucination-Trap)",
+    "model": "qwen2.5:1.5b",
+    "question": "Does the policy provide unlimited coverage for every medical treatment?",
+    "answer": "No, the policy does not provide unlimited coverage for every medical treatment. The policy covers reasonable expenses incurred towards medical treatment taken during the Policy Period for an illness, accident, or condition described below, subject to the Sum Insured, any subsidiary limit specified in the Product Benefits Table, the terms, conditions, limitations, and exclusions mentioned in the Policy, eligibility as per the insurance plan opted for in the Product Benefits Table, and as shown in the Schedule of Insurance Certificate. The policy does not guarantee unlimited coverage for every medical treatment.",
+    "ground_truth": "No. Coverage is subject to waiting periods, exclusions, sub-limits (such as the 45-day/7-day caps on Hospital Cash Benefit), and specific policy conditions; it is not unlimited.",
+    "metrics": {
+      "correctness": 0.8478,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.7393,
+      "latency_seconds": 12.09,
+      "token_usage_approx": 135,
+      "peak_cpu_percent": 61.5,
+      "peak_memory_mb": 70.8
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G6-24",
+    "group": "Robustness (Out-of-Scope / Ambiguous / Hallucination-Trap)",
+    "model": "qwen2.5:1.5b",
+    "question": "Does this insurance policy cover cosmetic surgery?",
+    "answer": "No, this insurance policy does not cover cosmetic surgery.",
+    "ground_truth": "No, cosmetic or plastic surgery for purely cosmetic or psychological reasons is excluded from coverage.",
+    "metrics": {
+      "correctness": 0.8529,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.6902,
+      "latency_seconds": 11.19,
+      "token_usage_approx": 21,
+      "peak_cpu_percent": 62.4,
+      "peak_memory_mb": 76.4
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G1-01",
+    "group": "Waiting Periods & Eligibility",
+    "model": "phi3:mini",
+    "question": "What is the waiting period for pre-existing diseases under the Health Assurance policy?",
+    "answer": "The waiting period for pre-existing diseases under the Health Assurance policy is 48 months of continuous coverage from the date of commencement of coverage for the Insured Person.",
+    "ground_truth": "Benefits for Pre-Existing Diseases are not available until 48 months of continuous coverage have elapsed since the inception of the first policy.",
+    "metrics": {
+      "correctness": 0.8877,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.8046,
+      "latency_seconds": 13.46,
+      "token_usage_approx": 55,
+      "peak_cpu_percent": 23.3,
+      "peak_memory_mb": 76.6
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G1-02",
+    "group": "Waiting Periods & Eligibility",
+    "model": "phi3:mini",
+    "question": "What is the specific waiting period for cataract treatment?",
+    "answer": "The specific waiting period for cataract treatment is 30 days as per the Group_Health_Insurance.pdf document on page 4, chunk 18.",
+    "ground_truth": "Cataract is subject to a 24-month specific waiting period and is covered from the commencement of the third policy year, provided continuous coverage without a break.",
+    "metrics": {
+      "correctness": 0.8932,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.6954,
+      "latency_seconds": 11.73,
+      "token_usage_approx": 39,
+      "peak_cpu_percent": 23.3,
+      "peak_memory_mb": 70.9
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G1-03",
+    "group": "Waiting Periods & Eligibility",
+    "model": "phi3:mini",
+    "question": "Are stones in the biliary system covered immediately after the policy starts?",
+    "answer": "For CritiCare and HospiCash, benefits for Pre-existing Diseases will not be available until 48 months of continuous coverage have elapsed since the inception of the first Policy with Us or other insurer in case of portability.",
+    "ground_truth": "No. Stones in the biliary and urinary systems are subject to the 24-month specific waiting period, not covered immediately.",
+    "metrics": {
+      "correctness": 0.6622,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.7291,
+      "latency_seconds": 11.64,
+      "token_usage_approx": 64,
+      "peak_cpu_percent": 15.6,
+      "peak_memory_mb": 61.3
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G1-04",
+    "group": "Waiting Periods & Eligibility",
+    "model": "phi3:mini",
+    "question": "What is the initial waiting period before any hospitalization (other than due to an accident) is covered?",
+    "answer": "The initial waiting period before any hospitalization (other than due to an accident) is covered is 30 days from the date of commencement of coverage for the Insured Person.",
+    "ground_truth": "There is an initial waiting period of 30 days from the date of commencement of the policy, unless the hospitalization is required solely and directly due to an accident.",
+    "metrics": {
+      "correctness": 0.9095,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.7702,
+      "latency_seconds": 11.62,
+      "token_usage_approx": 61,
+      "peak_cpu_percent": 23.3,
+      "peak_memory_mb": 59.2
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G2-05",
+    "group": "Coverage & Benefits",
+    "model": "phi3:mini",
+    "question": "What is the maximum number of days the Hospital Cash Benefit is payable in a policy year?",
+    "answer": "The waiting period for the Hospital Cash Benefit under Clause 2.3 for the specified disease conditions is 24 months, and the benefit will be paid from the commencement of the third Policy Year, provided there has been continuous insurance without any break. The daily allowance will be paid for a minimum of 2 days of hospitalization, and the maximum number of days for which the daily allowance will be paid in a Policy Year, including all days of admission to the Intensive Care Unit, is 45 days.",
+    "ground_truth": "The Hospital Cash Benefit (Daily Allowance) is payable for a maximum of 45 days in a policy year, including all days of ICU admission.",
+    "metrics": {
+      "correctness": 0.8887,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.7574,
+      "latency_seconds": 12.99,
+      "token_usage_approx": 139,
+      "peak_cpu_percent": 23.4,
+      "peak_memory_mb": 56.3
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G2-06",
+    "group": "Coverage & Benefits",
+    "model": "phi3:mini",
+    "question": "How does the ICU daily allowance compare to the normal Hospital Cash Benefit daily allowance?",
+    "answer": "The Company agrees to pay to the Insured Person the Daily Benefit stated in the Schedule. The Deductible or Franchise, if applicable, shall be deducted from the Compensation payable. Specific Provisions In case of successive Hospital stays with less than sixty (60) Days between each one for a same cause, the Deductible or Franchise will only apply once, as the Hospital stays will be deemed as one event. Specific Conditions Once the Company has paid the Daily Benefit up to the maximum",
+    "ground_truth": "If admitted to the ICU, twice the normal Daily Allowance is paid for each continuous 24-hour period of ICU admission.",
+    "metrics": {
+      "correctness": 0.6834,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.7233,
+      "latency_seconds": 12.67,
+      "token_usage_approx": 129,
+      "peak_cpu_percent": 7.8,
+      "peak_memory_mb": 58.0
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G2-07",
+    "group": "Coverage & Benefits",
+    "model": "phi3:mini",
+    "question": "What is the minimum hospitalization period required to claim the Hospital Cash Benefit?",
+    "answer": "The Health Assurance Policy Document states that the Insured Person is Hospitalised for a minimum period of at least 2 days with continuous and completed periods of at least 24 hours following which the benefit amount will be payable from the first day of Hospitalisation.",
+    "ground_truth": "The insured person must be hospitalised for a minimum of at least 2 days with continuous completed 24-hour periods for the benefit to be payable.",
+    "metrics": {
+      "correctness": 0.9155,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.7825,
+      "latency_seconds": 11.67,
+      "token_usage_approx": 77,
+      "peak_cpu_percent": 15.6,
+      "peak_memory_mb": 58.0
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G2-08",
+    "group": "Coverage & Benefits",
+    "model": "phi3:mini",
+    "question": "What is the maximum number of days the ICU benefit is payable per policy year?",
+    "answer": "The maximum number of days the ICU benefit is payable per policy year is 7 days.",
+    "ground_truth": "The ICU benefit is payable for a maximum of 7 days in a policy year.",
+    "metrics": {
+      "correctness": 0.971,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.7987,
+      "latency_seconds": 11.32,
+      "token_usage_approx": 41,
+      "peak_cpu_percent": 15.6,
+      "peak_memory_mb": 57.1
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G3-09",
+    "group": "Exclusions & Limitations",
+    "model": "phi3:mini",
+    "question": "Does the policy cover cosmetic surgery?",
+    "answer": "The policy does not cover cosmetic surgery when it is undergone purely for cosmetic or psychological reasons to improve appearance. However, it does cover cosmetic surgery if it is medically necessary as part of treatment for cancer, accidents, or burns to restore functionality.",
+    "ground_truth": "No. Cosmetic or plastic surgery undertaken purely for cosmetic or psychological reasons is excluded, unless medically necessary due to an accident or illness.",
+    "metrics": {
+      "correctness": 0.8731,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.7013,
+      "latency_seconds": 12.01,
+      "token_usage_approx": 65,
+      "peak_cpu_percent": 21.6,
+      "peak_memory_mb": 55.6
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G3-10",
+    "group": "Exclusions & Limitations",
+    "model": "phi3:mini",
+    "question": "Under what condition are benefits for Pre-Existing Diseases excluded?",
+    "answer": "Benefits for Pre-Existing Diseases are excluded until 48 months of continuous coverage have elapsed from the date of commencement of coverage for the Insured Person.",
+    "ground_truth": "Pre-existing disease benefits are excluded until 48 months of continuous coverage have elapsed since inception of the first policy with the insurer.",
+    "metrics": {
+      "correctness": 0.9739,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.8103,
+      "latency_seconds": 11.59,
+      "token_usage_approx": 45,
+      "peak_cpu_percent": 23.4,
+      "peak_memory_mb": 55.9
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G3-11",
+    "group": "Exclusions & Limitations",
+    "model": "phi3:mini",
+    "question": "Is hospitalization caused by an accident subject to the 30-day initial waiting period?",
+    "answer": "No, hospitalization caused by an accident is not subject to the 30-day initial waiting period. The policy explicitly states that it will not be liable to make any payment for hospitalization and/or treatment following diagnosis which occurs within 30 days from the date of commencement of the Policy, unless such hospitalization is required solely and directly due to an accident.",
+    "ground_truth": "No, the 30-day initial waiting period does not apply if the hospitalization is required solely and directly due to an accident.",
+    "metrics": {
+      "correctness": 0.9325,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.7842,
+      "latency_seconds": 11.82,
+      "token_usage_approx": 97,
+      "peak_cpu_percent": 7.8,
+      "peak_memory_mb": 56.2
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G3-12",
+    "group": "Exclusions & Limitations",
+    "model": "phi3:mini",
+    "question": "What happens to a Permanent Partial Disability (PPD) claim if the insured person dies before the claim is admitted?",
+    "answer": "We will make a one-time payment of Rs 5,000 towards the funeral expenses of the Insured Person.",
+    "ground_truth": "No amount is payable under the Permanent Partial Disability benefit; instead the claim will be considered under the Accidental Death benefit.",
+    "metrics": {
+      "correctness": 0.5746,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.8284,
+      "latency_seconds": 11.31,
+      "token_usage_approx": 48,
+      "peak_cpu_percent": 23.3,
+      "peak_memory_mb": 56.0
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G4-13",
+    "group": "Numerical & Financial Details",
+    "model": "phi3:mini",
+    "question": "What percentage of the Sum Insured is payable for the loss of use of both hands under Permanent Partial Disability?",
+    "answer": "If a person dies before a claim has been admitted under 2.1.5, no amount will be payable under 2.1.5.",
+    "ground_truth": "100% of the Sum Insured is payable for the loss or total and permanent loss of use of both hands from the wrist joint.",
+    "metrics": {
+      "correctness": 0.5347,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.8292,
+      "latency_seconds": 11.5,
+      "token_usage_approx": 52,
+      "peak_cpu_percent": 15.4,
+      "peak_memory_mb": 56.2
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G4-14",
+    "group": "Numerical & Financial Details",
+    "model": "phi3:mini",
+    "question": "How much notice must be given to cancel the Travel Insurance policy, and what minimum amount does the company retain?",
+    "answer": "The Travel Insurance policy must be cancelled by giving 30 days prior written notice to the company. Upon such cancellation, the company retains a minimum amount of 50% of the premium for the pro-rata basis refund. However, if the cancellation is due to misrepresentation, fraud, non-disclosure of material facts, or non-cooperation by the insured, no refund of premium will be allowed.",
+    "ground_truth": "The policy may be cancelled with thirty (30) days written notice, and the company retains a minimum of Rs 251 from the premium.",
+    "metrics": {
+      "correctness": 0.8244,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.7957,
+      "latency_seconds": 12.7,
+      "token_usage_approx": 108,
+      "peak_cpu_percent": 15.6,
+      "peak_memory_mb": 55.7
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G4-15",
+    "group": "Numerical & Financial Details",
+    "model": "phi3:mini",
+    "question": "For how long must a Permanent Total or Partial Disability continue to be admissible as a claim?",
+    "answer": "The Temporary Total Disability (TTD) benefit continues for a period of up to 100 weeks in a lifetime, which is the lifetime limit. Once this limit is reached, the TTD benefit cannot be renewed any further, but the policy can be renewed with all other benefits, including the optional Accident Hospitalization Benefit. The policyholder has the option to renew the benefit until the lifetime limit is exhausted.",
+    "ground_truth": "The disability must continue for a period of at least 6 continuous calendar months from its commencement, unless it is irreversible.",
+    "metrics": {
+      "correctness": 0.7805,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.8082,
+      "latency_seconds": 12.3,
+      "token_usage_approx": 112,
+      "peak_cpu_percent": 54.2,
+      "peak_memory_mb": 56.1
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G4-16",
+    "group": "Numerical & Financial Details",
+    "model": "phi3:mini",
+    "question": "Within how many days of an accident must a Permanent Partial Disability occur for it to be claimable?",
+    "answer": "According to the policy document, a claim under 2.1.5 will only be admitted if the Permanent Partial Disability continues for at least 6 continuous calendar months from the commencement of the disability, unless it is irreversible. If the Insured Person dies before a claim has been admitted under 2.1.5, no amount will be payable under 2.1.5, but the claim will be considered under 2.1.1.",
+    "ground_truth": "The disability must occur within 365 days from the occurrence of the accident.",
+    "metrics": {
+      "correctness": 0.7452,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.8107,
+      "latency_seconds": 12.5,
+      "token_usage_approx": 109,
+      "peak_cpu_percent": 22.8,
+      "peak_memory_mb": 56.0
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G5-17",
+    "group": "Cross-Document & Multi-hop Reasoning",
+    "model": "phi3:mini",
+    "question": "Compare the initial waiting period across the Health Assurance and Group Health Insurance policies.",
+    "answer": "The initial waiting period for Group Health Insurance is 24 months from the date of commencement of coverage for the Insured Person. The evidence does not provide specific information about the initial waiting period for Health Assurance, thus we cannot compare the initial waiting periods directly from the provided evidence.",
+    "ground_truth": "Both policies apply a similar initial waiting period of 30 days from the start of coverage, which does not apply to hospitalization caused directly by an accident.",
+    "metrics": {
+      "correctness": 0.7969,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.7721,
+      "latency_seconds": 12.04,
+      "token_usage_approx": 85,
+      "peak_cpu_percent": 15.6,
+      "peak_memory_mb": 56.7
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G5-18",
+    "group": "Cross-Document & Multi-hop Reasoning",
+    "model": "phi3:mini",
+    "question": "If a person has a pre-existing disease and also needs cataract surgery, which waiting period is longer and which one applies overall?",
+    "answer": "Based on the provided policy evidence, the waiting period for both the treatment of varicose veins (EVIDENCE 1) and dysfunctional uterine bleeding/fibroids/prolapse uterus/endometriosis (EVIDENCE 5) is 24 months. However, the waiting period for the treatment of stones in the biliary and urinary systems (EVIDENCE 4) and tonsil/adenoid surgery (EVIDENCE 3) is also 24 months.",
+    "ground_truth": "The pre-existing disease waiting period (48 months) is longer than the cataract-specific waiting period (24 months); since cataract is likely linked to or treated as part of the broader pre-existing condition rules, the longer 48-month pre-existing disease waiting period is the more restrictive one to consider.",
+    "metrics": {
+      "correctness": 0.7887,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.732,
+      "latency_seconds": 13.0,
+      "token_usage_approx": 101,
+      "peak_cpu_percent": 15.6,
+      "peak_memory_mb": 56.0
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G5-19",
+    "group": "Cross-Document & Multi-hop Reasoning",
+    "model": "phi3:mini",
+    "question": "Which documents in the knowledge base mention coverage for hospitalization expenses?",
+    "answer": "Razor is Payable.",
+    "ground_truth": "Health_Assurance.pdf, Group_Health_Insurance.pdf, and Health_Companion_Insurance.pdf all mention hospitalization coverage.",
+    "metrics": {
+      "correctness": 0.451,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.7738,
+      "latency_seconds": 10.92,
+      "token_usage_approx": 19,
+      "peak_cpu_percent": 7.8,
+      "peak_memory_mb": 56.6
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G5-20",
+    "group": "Cross-Document & Multi-hop Reasoning",
+    "model": "phi3:mini",
+    "question": "Which two documents both describe Permanent Total Disability (PTD) benefits?",
+    "answer": "2.1.6.1: A claim under 2.1.5 will only be admitted if the Permanent Partial Disability continues for a period of at least 6 continuous calendar months from the commencement of the Permanent Partial Disability.\n\n2.1.6.2: If the Insured Person dies before a claim has been admitted under 2.1.5, no amount will be payable under 2.1.5.",
+    "ground_truth": "Health_Assurance.pdf and AccidentCare_Insurance.pdf both describe Permanent Total Disability benefits.",
+    "metrics": {
+      "correctness": 0.6922,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.7573,
+      "latency_seconds": 12.53,
+      "token_usage_approx": 85,
+      "peak_cpu_percent": 23.1,
+      "peak_memory_mb": 55.9
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G6-21",
+    "group": "Robustness (Out-of-Scope / Ambiguous / Hallucination-Trap)",
+    "model": "phi3:mini",
+    "question": "What is today's petrol price?",
+    "answer": "The answer is 90.00% for both the first and second measurements.",
+    "ground_truth": "This information is not related to insurance policies and is not present in the knowledge base; the correct behavior is to state that the documents do not contain this information rather than guessing an answer.",
+    "metrics": {
+      "correctness": 0.4112,
+      "faithfulness": 0.0,
+      "hallucination_rate": 1.0,
+      "retrieval_quality": 0.5357,
+      "latency_seconds": 11.14,
+      "token_usage_approx": 21,
+      "peak_cpu_percent": 15.6,
+      "peak_memory_mb": 56.0
+    },
+    "risk": "HIGH"
+  },
+  {
+    "id": "G6-22",
+    "group": "Robustness (Out-of-Scope / Ambiguous / Hallucination-Trap)",
+    "model": "phi3:mini",
+    "question": "Will my surgery be covered?",
+    "answer": "Yes, your surgery will be covered as it is considered essential in bariatric and varicose vein surgery where the policy explicitly states that surgery itself is payable.",
+    "ground_truth": "This question is ambiguous because it does not specify the type of surgery, policy, or condition; the correct behavior is to ask for clarification or explain that coverage depends on the specific procedure, waiting periods, and exclusions, rather than giving a definite yes or no.",
+    "metrics": {
+      "correctness": 0.6684,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.7064,
+      "latency_seconds": 11.8,
+      "token_usage_approx": 43,
+      "peak_cpu_percent": 15.5,
+      "peak_memory_mb": 58.3
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G6-23",
+    "group": "Robustness (Out-of-Scope / Ambiguous / Hallucination-Trap)",
+    "model": "phi3:mini",
+    "question": "Does the policy provide unlimited coverage for every medical treatment?",
+    "answer": "No, the policy does not provide unlimited coverage for every medical treatment. The policy specifies that the coverage is subject to the Sub-limits shown in the Product Benefits Table and the Sum Insured. Additionally, the policy states that the total liability for the payment of compensation under medical expenses and dental treatment is limited to the sum insured of 2.1.a. Medical expenses as mentioned in the Policy Schedule / Certificate of Insurance.",
+    "ground_truth": "No. Coverage is subject to waiting periods, exclusions, sub-limits (such as the 45-day/7-day caps on Hospital Cash Benefit), and specific policy conditions; it is not unlimited.",
+    "metrics": {
+      "correctness": 0.8294,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.7393,
+      "latency_seconds": 13.08,
+      "token_usage_approx": 109,
+      "peak_cpu_percent": 7.8,
+      "peak_memory_mb": 58.8
+    },
+    "risk": "LOW"
+  },
+  {
+    "id": "G6-24",
+    "group": "Robustness (Out-of-Scope / Ambiguous / Hallucination-Trap)",
+    "model": "phi3:mini",
+    "question": "Does this insurance policy cover cosmetic surgery?",
+    "answer": "Razor expenses are payable.",
+    "ground_truth": "No, cosmetic or plastic surgery for purely cosmetic or psychological reasons is excluded from coverage.",
+    "metrics": {
+      "correctness": 0.5525,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.6902,
+      "latency_seconds": 10.86,
+      "token_usage_approx": 15,
+      "peak_cpu_percent": 15.6,
+      "peak_memory_mb": 58.8
+    },
+    "risk": "LOW"
+  }
+]
