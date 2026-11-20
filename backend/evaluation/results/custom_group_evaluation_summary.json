@@ -1,0 +1,266 @@
+{
+  "Waiting Periods & Eligibility": {
+    "codellama:7b-instruct": {
+      "correctness": 0.8642,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.7498,
+      "latency_seconds": 17.99,
+      "token_usage_approx": 56.0,
+      "peak_cpu_percent": 17.525,
+      "peak_memory_mb": 55.725
+    },
+    "qwen2.5:1.5b": {
+      "correctness": 0.892,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.7498,
+      "latency_seconds": 11.8125,
+      "token_usage_approx": 40.0,
+      "peak_cpu_percent": 52.225,
+      "peak_memory_mb": 70.875
+    },
+    "phi3:mini": {
+      "correctness": 0.8381,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.7498,
+      "latency_seconds": 12.1125,
+      "token_usage_approx": 54.75,
+      "peak_cpu_percent": 21.375,
+      "peak_memory_mb": 67.0
+    },
+    "_best_per_metric": {
+      "correctness": "qwen2.5:1.5b",
+      "faithfulness": "codellama:7b-instruct",
+      "hallucination_rate": "codellama:7b-instruct",
+      "retrieval_quality": "codellama:7b-instruct",
+      "latency_seconds": "qwen2.5:1.5b",
+      "token_usage_approx": "qwen2.5:1.5b",
+      "peak_cpu_percent": "codellama:7b-instruct",
+      "peak_memory_mb": "codellama:7b-instruct"
+    },
+    "_overall_winner": "codellama:7b-instruct",
+    "_reason": "codellama:7b-instruct led on 5/8 metrics in this group: faithfulness, hallucination_rate, retrieval_quality, peak_cpu_percent, peak_memory_mb."
+  },
+  "Coverage & Benefits": {
+    "codellama:7b-instruct": {
+      "correctness": 0.8277,
+      "faithfulness": 0.875,
+      "hallucination_rate": 0.125,
+      "retrieval_quality": 0.7655,
+      "latency_seconds": 17.3225,
+      "token_usage_approx": 92.0,
+      "peak_cpu_percent": 11.7,
+      "peak_memory_mb": 56.3
+    },
+    "qwen2.5:1.5b": {
+      "correctness": 0.7176,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.7655,
+      "latency_seconds": 11.255,
+      "token_usage_approx": 45.75,
+      "peak_cpu_percent": 54.525,
+      "peak_memory_mb": 72.95
+    },
+    "phi3:mini": {
+      "correctness": 0.8647,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.7655,
+      "latency_seconds": 12.1625,
+      "token_usage_approx": 96.5,
+      "peak_cpu_percent": 15.6,
+      "peak_memory_mb": 57.35
+    },
+    "_best_per_metric": {
+      "correctness": "phi3:mini",
+      "faithfulness": "qwen2.5:1.5b",
+      "hallucination_rate": "qwen2.5:1.5b",
+      "retrieval_quality": "codellama:7b-instruct",
+      "latency_seconds": "qwen2.5:1.5b",
+      "token_usage_approx": "qwen2.5:1.5b",
+      "peak_cpu_percent": "codellama:7b-instruct",
+      "peak_memory_mb": "codellama:7b-instruct"
+    },
+    "_overall_winner": "qwen2.5:1.5b",
+    "_reason": "qwen2.5:1.5b led on 4/8 metrics in this group: faithfulness, hallucination_rate, latency_seconds, token_usage_approx."
+  },
+  "Exclusions & Limitations": {
+    "codellama:7b-instruct": {
+      "correctness": 0.8374,
+      "faithfulness": 0.875,
+      "hallucination_rate": 0.125,
+      "retrieval_quality": 0.7811,
+      "latency_seconds": 97.9075,
+      "token_usage_approx": 62.5,
+      "peak_cpu_percent": 19.3,
+      "peak_memory_mb": 56.25
+    },
+    "qwen2.5:1.5b": {
+      "correctness": 0.8165,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.7811,
+      "latency_seconds": 11.385,
+      "token_usage_approx": 56.5,
+      "peak_cpu_percent": 44.65,
+      "peak_memory_mb": 76.3
+    },
+    "phi3:mini": {
+      "correctness": 0.8385,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.7811,
+      "latency_seconds": 11.6825,
+      "token_usage_approx": 63.75,
+      "peak_cpu_percent": 19.025,
+      "peak_memory_mb": 55.925
+    },
+    "_best_per_metric": {
+      "correctness": "phi3:mini",
+      "faithfulness": "qwen2.5:1.5b",
+      "hallucination_rate": "qwen2.5:1.5b",
+      "retrieval_quality": "codellama:7b-instruct",
+      "latency_seconds": "qwen2.5:1.5b",
+      "token_usage_approx": "qwen2.5:1.5b",
+      "peak_cpu_percent": "phi3:mini",
+      "peak_memory_mb": "phi3:mini"
+    },
+    "_overall_winner": "qwen2.5:1.5b",
+    "_reason": "qwen2.5:1.5b led on 4/8 metrics in this group: faithfulness, hallucination_rate, latency_seconds, token_usage_approx."
+  },
+  "Numerical & Financial Details": {
+    "codellama:7b-instruct": {
+      "correctness": 0.6953,
+      "faithfulness": 0.75,
+      "hallucination_rate": 0.25,
+      "retrieval_quality": 0.811,
+      "latency_seconds": 20.39,
+      "token_usage_approx": 90.0,
+      "peak_cpu_percent": 17.5,
+      "peak_memory_mb": 56.9
+    },
+    "qwen2.5:1.5b": {
+      "correctness": 0.6216,
+      "faithfulness": 0.75,
+      "hallucination_rate": 0.25,
+      "retrieval_quality": 0.811,
+      "latency_seconds": 11.0525,
+      "token_usage_approx": 36.25,
+      "peak_cpu_percent": 44.375,
+      "peak_memory_mb": 73.25
+    },
+    "phi3:mini": {
+      "correctness": 0.7212,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.811,
+      "latency_seconds": 12.25,
+      "token_usage_approx": 95.25,
+      "peak_cpu_percent": 27.0,
+      "peak_memory_mb": 56.0
+    },
+    "_best_per_metric": {
+      "correctness": "phi3:mini",
+      "faithfulness": "phi3:mini",
+      "hallucination_rate": "phi3:mini",
+      "retrieval_quality": "codellama:7b-instruct",
+      "latency_seconds": "qwen2.5:1.5b",
+      "token_usage_approx": "qwen2.5:1.5b",
+      "peak_cpu_percent": "codellama:7b-instruct",
+      "peak_memory_mb": "phi3:mini"
+    },
+    "_overall_winner": "phi3:mini",
+    "_reason": "phi3:mini led on 4/8 metrics in this group: correctness, faithfulness, hallucination_rate, peak_memory_mb."
+  },
+  "Cross-Document & Multi-hop Reasoning": {
+    "codellama:7b-instruct": {
+      "correctness": 0.5899,
+      "faithfulness": 0.9275,
+      "hallucination_rate": 0.0732,
+      "retrieval_quality": 0.7588,
+      "latency_seconds": 20.5,
+      "token_usage_approx": 81.0,
+      "peak_cpu_percent": 17.525,
+      "peak_memory_mb": 56.85
+    },
+    "qwen2.5:1.5b": {
+      "correctness": 0.8093,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.7588,
+      "latency_seconds": 11.68,
+      "token_usage_approx": 76.25,
+      "peak_cpu_percent": 42.5,
+      "peak_memory_mb": 73.4
+    },
+    "phi3:mini": {
+      "correctness": 0.6822,
+      "faithfulness": 1.0,
+      "hallucination_rate": 0.0,
+      "retrieval_quality": 0.7588,
+      "latency_seconds": 12.1225,
+      "token_usage_approx": 72.5,
+      "peak_cpu_percent": 15.525,
+      "peak_memory_mb": 56.3
+    },
+    "_best_per_metric": {
+      "correctness": "qwen2.5:1.5b",
+      "faithfulness": "qwen2.5:1.5b",
+      "hallucination_rate": "qwen2.5:1.5b",
+      "retrieval_quality": "codellama:7b-instruct",
+      "latency_seconds": "qwen2.5:1.5b",
+      "token_usage_approx": "phi3:mini",
+      "peak_cpu_percent": "phi3:mini",
+      "peak_memory_mb": "phi3:mini"
+    },
+    "_overall_winner": "qwen2.5:1.5b",
+    "_reason": "qwen2.5:1.5b led on 4/8 metrics in this group: correctness, faithfulness, hallucination_rate, latency_seconds."
+  },
+  "Robustness (Out-of-Scope / Ambiguous / Hallucination-Trap)": {
+    "codellama:7b-instruct": {
+      "correctness": 0.6399,
+      "faithfulness": 0.75,
+      "hallucination_rate": 0.25,
+      "retrieval_quality": 0.6679,
+      "latency_seconds": 21.545,
+      "token_usage_approx": 73.5,
+      "peak_cpu_percent": 17.5,
+      "peak_memory_mb": 57.225
+    },
+    "qwen2.5:1.5b": {
+      "correctness": 0.6705,
+      "faithfulness": 0.75,
+      "hallucination_rate": 0.25,
+      "retrieval_quality": 0.6679,
+      "latency_seconds": 11.535,
+      "token_usage_approx": 59.0,
+      "peak_cpu_percent": 56.275,
+      "peak_memory_mb": 71.25
+    },
+    "phi3:mini": {
+      "correctness": 0.6154,
+      "faithfulness": 0.75,
+      "hallucination_rate": 0.25,
+      "retrieval_quality": 0.6679,
+      "latency_seconds": 11.72,
+      "token_usage_approx": 47.0,
+      "peak_cpu_percent": 13.625,
+      "peak_memory_mb": 57.975
+    },
+    "_best_per_metric": {
+      "correctness": "qwen2.5:1.5b",
+      "faithfulness": "codellama:7b-instruct",
+      "hallucination_rate": "codellama:7b-instruct",
+      "retrieval_quality": "codellama:7b-instruct",
+      "latency_seconds": "qwen2.5:1.5b",
+      "token_usage_approx": "phi3:mini",
+      "peak_cpu_percent": "phi3:mini",
+      "peak_memory_mb": "codellama:7b-instruct"
+    },
+    "_overall_winner": "codellama:7b-instruct",
+    "_reason": "codellama:7b-instruct led on 4/8 metrics in this group: faithfulness, hallucination_rate, retrieval_quality, peak_memory_mb."
+  }
+}
